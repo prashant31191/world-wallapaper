@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardlist_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_8sdp"
+        android:background="@color/colorPrimaryDark"
+        >
+        <RelativeLayout
+            android:id="@+id/rlMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                >
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/_5sdp"
+                android:fontFamily="@font/pacifico"
+                android:text="@string/app_name"
+                android:textColor="@color/clrTitle"
+                android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/tvData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:padding="@dimen/_5sdp"
+                    android:fontFamily="@font/pacifico"
+                    android:text="@string/app_name"
+                    android:textColor="@color/clrDetail"
+                    android:textSize="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                   <!-- <com.nightonke.boommenu.BoomMenuButton
+                        android:id="@+id/bmb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:bmb_buttonEnum="simpleCircle"
+                        app:bmb_piecePlaceEnum="piecePlace_dot_9_1"
+                        app:bmb_buttonPlaceEnum="buttonPlace_sc_9_1"
+                        app:bmb_inList="true"/>-->
+
+                    <com.nightonke.boommenu.BoomMenuButton
+                        android:id="@+id/bmb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:bmb_buttonEnum="ham"
+                        app:bmb_piecePlaceEnum="piecePlace_ham_3"
+                        app:bmb_buttonPlaceEnum="buttonPlace_ham_3"
+                        app:bmb_inList="true"/>
+
+                   <!-- <com.nightonke.boommenu.BoomMenuButton
+                        android:id="@+id/bmb3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:bmb_buttonEnum="simpleCircle"
+                        app:bmb_piecePlaceEnum="piecePlace_share"
+                        app:bmb_buttonPlaceEnum="buttonPlace_sc_6_1"
+                        app:bmb_shareLine1Color="@android:color/holo_blue_light"
+                        app:bmb_shareLine2Color="@android:color/holo_orange_light"
+                        app:bmb_inList="true"/>-->
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/ivUserPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llData"
+                android:src="@drawable/icon"
+                android:adjustViewBounds="true"
+                android:minHeight="@dimen/_50sdp"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivUserPhoto"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                />
+            <ImageView
+                android:id="@+id/ivFav"
+                android:src="@drawable/ic_favorite_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_8sdp"
+                />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
