@@ -84,7 +84,7 @@
 
 
 
-        <activity android:name=".pedometer.Pedometer"
+        <activity android:name=".pedometer.PedometerActivity"
             android:label="@string/app_name"
             android:configChanges="orientation"/>
 

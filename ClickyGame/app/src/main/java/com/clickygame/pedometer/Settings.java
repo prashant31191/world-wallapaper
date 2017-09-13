@@ -24,7 +24,7 @@ import android.preference.PreferenceActivity;
 import com.clickygame.R;
 
 /**
- * Activity for Pedometer settings.
+ * Activity for PedometerActivity settings.
  * Started when the user click Settings from the main menu.
  * @author Levente Bagi
  */

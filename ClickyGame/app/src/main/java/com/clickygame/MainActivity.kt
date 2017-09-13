@@ -9,7 +9,6 @@ import android.support.v7.widget.Toolbar
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import com.clickygame.pedometer.Pedometer
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
-            //val intent = Intent(this, Pedometer::class.java)
+            //val intent = Intent(this, PedometerActivity::class.java)
             val intent = Intent(this, ImageEffectActivity::class.java)
             startActivity(intent)
 

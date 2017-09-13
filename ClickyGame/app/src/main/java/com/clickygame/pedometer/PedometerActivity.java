@@ -42,8 +42,8 @@ import android.widget.TextView;
 import com.clickygame.R;
 
 
-public class Pedometer extends Activity {
-	private static final String TAG = "Pedometer";
+public class PedometerActivity extends Activity {
+	private static final String TAG = "PedometerActivity";
     private SharedPreferences mSettings;
     private PedometerSettings mPedometerSettings;
     private Utils mUtils;
@@ -259,14 +259,14 @@ public class Pedometer extends Activity {
         if (! mIsRunning) {
             Log.i(TAG, "[SERVICE] Start");
             mIsRunning = true;
-            startService(new Intent(Pedometer.this,
+            startService(new Intent(PedometerActivity.this,
                     StepService.class));
         }
     }
     
     private void bindStepService() {
         Log.i(TAG, "[SERVICE] Bind");
-        bindService(new Intent(Pedometer.this, 
+        bindService(new Intent(PedometerActivity.this,
                 StepService.class), mConnection, Context.BIND_AUTO_CREATE + Context.BIND_DEBUG_UNBIND);
     }
 
@@ -279,7 +279,7 @@ public class Pedometer extends Activity {
         Log.i(TAG, "[SERVICE] Stop");
         if (mService != null) {
             Log.i(TAG, "[SERVICE] stopService");
-            stopService(new Intent(Pedometer.this,
+            stopService(new Intent(PedometerActivity.this,
                   StepService.class));
         }
         mIsRunning = false;
